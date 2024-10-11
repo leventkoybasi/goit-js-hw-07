@@ -8,6 +8,7 @@
   --grey: #808080;
   --white: #ffffff;
   --blue: #4e75ff;
+  --red: #ff4e4e;
 }
 
 * {
@@ -180,15 +181,15 @@ button[type="submit"] {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: var(--dark-purple);
 }
 .change-color {
   border-radius: 8px;
-  border-color: #4e75ff;
+  border-color: var(--blue);
   padding: 8px 16px;
   width: 148px;
   height: 40px;
-  background: #4e75ff;
+  background: var(--blue);
 
   font-family: var(--font-family);
   font-weight: 500;
@@ -196,4 +197,73 @@ button[type="submit"] {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+/* Task - 6 CSS */
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background-color: var(--light-purple);
+}
+input[type="number"] {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  padding: 8px 56px;
+  width: 150px;
+  height: 40px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+button[data-create] {
+  border-radius: 8px;
+  border-color: var(--blue);
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: var(--blue);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+button[data-destroy] {
+  border-radius: 8px;
+  border-color: var(--red);
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: var(--red);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  margin-top: 16px;
+  background-color: var(--light-purple);
+  border-radius: 8px;
+  padding: 30px;
+  width: 486px;
+  min-height: auto;
 }
